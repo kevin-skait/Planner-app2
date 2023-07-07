@@ -1,21 +1,70 @@
-The stopwatch widget function, represented by the <MyCustomWidget /> component, is one of the widgets in the application. Let's break down its functionality in detail:
+# Getting Started with Create React App
 
-Import statement:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The component imports the necessary dependencies and libraries, although the specific code for the stopwatch widget is not included in the code snippet you provided. The import statement for the stopwatch widget component is missing.
-Widget object:
+## Available Scripts
 
-In the widgets array of the state, there is a widget object representing the stopwatch widget. The object contains properties such as id, component, area, and name. The component property is assigned with the <MyCustomWidget /> component, indicating that it is the component responsible for rendering the stopwatch widget.
-Widget container:
+In the project directory, you can run:
 
-Within the JSX code, there is a section that handles the rendering of the stopwatch widget within its corresponding widget container. This section is enclosed in a <div> element with the class name 'left-widget'.
-Widget options:
+### `npm start`
 
-The widget container contains a select dropdown element that allows the user to change the widget's area. The current value of the select element is determined by the widget.area property.
-When the user selects a different area for the widget, the onChange event is triggered, and a function is called to update the widgetList and widgets state. The selected area value is assigned to widgetList[index].area, and then the setWidgets(widgetList) function is called to update the state.
-Close button:
-The widget container also includes a "Close" button with an onClick event handler. When the button is clicked, the removeWidget() function is called with the widget.id as the argument to remove the widget from the widgets state.
-Custom Stopwatch Widget Component:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The <MyCustomWidget /> component represents the stopwatch widget itself. 
-Overall, the stopwatch widget allows the user to interact with it by changing its area, moving it within the specified area (thanks to the Draggable component), and removing it from the application. However, without the implementation code for the stopwatch widget component, it is not possible to provide a detailed explanation of its specific functionality and behavior.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
