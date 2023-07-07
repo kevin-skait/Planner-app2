@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+The stopwatch widget function, represented by the MyCustomWidget component, is my preferred widgets in the application. Let's break down its functionality in detail:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+State variables:
 
-## Available Scripts
+isRunning: A boolean state variable that indicates whether the stopwatch is currently running or not.
+elapsedTime: A numeric state variable that represents the elapsed time in seconds.
+intervalRef: A reference to the interval created by setInterval to update the elapsed time.
+startStopwatch function:
 
-In the project directory, you can run:
+This function is responsible for starting and stopping the stopwatch.
+When the function is called, it checks the value of isRunning.
+If isRunning is false, it starts the stopwatch by setting up an interval that updates the elapsedTime state every second.
+If isRunning is true, it stops the stopwatch by clearing the interval using clearInterval.
+Finally, it toggles the value of isRunning using the setIsRunning function.
+resetStopwatch function:
 
-### `npm start`
+This function is responsible for resetting the stopwatch to its initial state.
+It clears the interval using clearInterval.
+It sets the elapsedTime state back to 0.
+It sets isRunning to false to indicate that the stopwatch is not running.
+formatTime function:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This function takes a time value in seconds and formats it into a string in the format mm:ss (minutes:seconds).
+It calculates the minutes and seconds based on the provided time value.
+It pads the minutes and seconds with leading zeros if necessary using the padStart function.
+It returns the formatted time string.
+JSX code:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The JSX code represents the structure and layout of the stopwatch widget.
+The widget is wrapped in a <div> element with a minimum width of 300 pixels.
+The widget contains a <div> element with the class name "stopwatch-widget".
+Inside the "stopwatch-widget", there is a heading with the text "Stopwatch" and a display for the elapsed time.
+The elapsed time is displayed using the formatTime function to format the elapsedTime state.
+The widget also includes two buttons: one for starting/stopping the stopwatch and another for resetting the stopwatch.
+The button text changes dynamically based on the isRunning state.
+Overall, this implementation provides the basic functionality of a stopwatch widget. Users can start, stop, and reset the stopwatch. The elapsed time is displayed, and it updates every second while the stopwatch is running.
