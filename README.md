@@ -1,3 +1,10 @@
+The custom widget I added to the planner app is the StopWatch Widget. This an appropriate addition to a planner app for several reasons.
+Firstly, a planner app is designed to help users manage their time effectively, and a stopwatch can be a useful tool for tracking and measuring time accurately. It allows users to time their activities, tasks, or events, ensuring they allocate the appropriate amount of time to each.
+
+The stopwatch widget is intuitive and easy to use. To start the stopwatch, users simply need to click the "Start" button. The elapsed time is displayed in a user-friendly format, with minutes and seconds separated by a colon. Users can pause the stopwatch by clicking the "Stop" button and resume it by clicking "Start" again. The "Reset" button allows users to clear the elapsed time and start fresh.
+
+By incorporating a stopwatch widget into a planner app, users can enhance their productivity and time management skills. They can accurately measure the duration of activities, keep track of their progress, and allocate time more efficiently to ensure optimal productivity. Whether it's timing study sessions, tracking workout durations, or managing project timelines, the stopwatch widget provides a practical and convenient tool within the planner app.
+
 The stopwatch widget function, represented by the MyCustomWidget component, is my preferred widgets in the application. Let's break down its functionality in detail:
 
 State variables:
